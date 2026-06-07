@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A-Ctrl Max Shop 是一个清晰、美观且实用的响应式购物平台首页。"
+    />
+    <title>A-Ctrl Max Shop | 精选品质商城</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="主导航">
+        <a class="brand" href="#" aria-label="A-Ctrl Max Shop 首页">
+          <span class="brand__mark">A</span>
+          <span>A-Ctrl Max</span>
+        </a>
+        <form class="search" role="search">
+          <span aria-hidden="true">⌕</span>
+          <input type="search" placeholder="搜索商品、品牌或分类" aria-label="搜索商品" />
+        </form>
+        <div class="nav-links">
+          <a href="#categories">分类</a>
+          <a href="#products">新品</a>
+          <a href="#deals">优惠</a>
+          <a href="#service">服务</a>
+        </div>
+        <button class="cart-button" type="button" aria-label="查看购物车">
+          <span>🛒</span>
+          <span>购物车</span>
+          <strong>3</strong>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <p class="eyebrow">夏季精选 · 限时上新</p>
+          <h1 id="hero-title">把高品质好物装进你的日常生活</h1>
+          <p class="hero__description">
+            精选数码、家居、服饰与美妆，提供清晰分类、智能推荐、快速结算与可靠售后体验。
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#products">立即选购</a>
+            <a class="button button--ghost" href="#deals">查看优惠</a>
+          </div>
+          <dl class="hero__stats" aria-label="平台数据">
+            <div>
+              <dt>48h</dt>
+              <dd>极速发货</dd>
+            </div>
+            <div>
+              <dt>12k+</dt>
+              <dd>好评订单</dd>
+            </div>
+            <div>
+              <dt>99%</dt>
+              <dd>正品保障</dd>
+            </div>
+          </dl>
+        </div>
+        <aside class="hero-card" aria-label="今日主推商品">
+          <span class="discount-badge">-28%</span>
+          <div class="product-visual product-visual--large">⌚</div>
+          <p class="tag">今日主推</p>
+          <h2>Nova 智能腕表 Pro</h2>
+          <p>健康监测、长续航、AMOLED 高清屏。</p>
+          <div class="price-row">
+            <strong>¥899</strong>
+            <span>¥1,249</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="trust-strip" aria-label="购物保障">
+        <article>
+          <span>🚚</span>
+          <div>
+            <h3>满 ¥99 包邮</h3>
+            <p>多仓发货，物流实时追踪</p>
+          </div>
+        </article>
+        <article>
+          <span>↩️</span>
+          <div>
+            <h3>7 天无理由退换</h3>
+            <p>售后流程透明可查</p>
+          </div>
+        </article>
+        <article>
+          <span>🛡️</span>
+          <div>
+            <h3>官方正品保障</h3>
+            <p>严选供应链与质检</p>
+          </div>
+        </article>
+        <article>
+          <span>💬</span>
+          <div>
+            <h3>在线客服</h3>
+            <p>全天候响应购物疑问</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="categories">
+        <div class="section__header">
+          <div>
+            <p class="eyebrow">Shop by category</p>
+            <h2>热门分类</h2>
+          </div>
+          <a href="#products">浏览全部 →</a>
+        </div>
+        <div class="category-grid">
+          <a class="category-card" href="#products"><span>💻</span><strong>数码科技</strong><small>128 件商品</small></a>
+          <a class="category-card" href="#products"><span>🏠</span><strong>品质家居</strong><small>96 件商品</small></a>
+          <a class="category-card" href="#products"><span>👟</span><strong>潮流穿搭</strong><small>214 件商品</small></a>
+          <a class="category-card" href="#products"><span>🧴</span><strong>美妆个护</strong><small>83 件商品</small></a>
+        </div>
+      </section>
+
+      <section class="section products-section" id="products">
+        <div class="section__header">
+          <div>
+            <p class="eyebrow">Curated picks</p>
+            <h2>精选商品</h2>
+          </div>
+          <div class="filter-pills" aria-label="商品筛选">
+            <button class="active" type="button">推荐</button>
+            <button type="button">新品</button>
+            <button type="button">热卖</button>
+          </div>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <button class="wishlist" type="button" aria-label="收藏 Aurora 耳机">♡</button>
+            <div class="product-visual">🎧</div>
+            <p class="tag">热卖</p>
+            <h3>Aurora 降噪耳机</h3>
+            <p>沉浸式空间音频，轻量佩戴。</p>
+            <div class="rating">★★★★★ <span>4.9</span></div>
+            <div class="product-card__footer"><strong>¥699</strong><button type="button">加入购物车</button></div>
+          </article>
+          <article class="product-card">
+            <button class="wishlist" type="button" aria-label="收藏 Linen 椅">♡</button>
+            <div class="product-visual product-visual--warm">🪑</div>
+            <p class="tag">新品</p>
+            <h3>Linen 人体工学椅</h3>
+            <p>柔软支撑，适合长时间办公。</p>
+            <div class="rating">★★★★☆ <span>4.7</span></div>
+            <div class="product-card__footer"><strong>¥1,299</strong><button type="button">加入购物车</button></div>
+          </article>
+          <article class="product-card">
+            <button class="wishlist" type="button" aria-label="收藏 Cloud 跑鞋">♡</button>
+            <div class="product-visual product-visual--mint">👟</div>
+            <p class="tag">限量</p>
+            <h3>Cloud 轻弹跑鞋</h3>
+            <p>回弹缓震，适配通勤与运动。</p>
+            <div class="rating">★★★★★ <span>4.8</span></div>
+            <div class="product-card__footer"><strong>¥499</strong><button type="button">加入购物车</button></div>
+          </article>
+          <article class="product-card">
+            <button class="wishlist" type="button" aria-label="收藏 Pure 护肤套装">♡</button>
+            <div class="product-visual product-visual--rose">🧴</div>
+            <p class="tag">套装</p>
+            <h3>Pure 保湿护肤套装</h3>
+            <p>温和补水，适合日常护理。</p>
+            <div class="rating">★★★★☆ <span>4.6</span></div>
+            <div class="product-card__footer"><strong>¥329</strong><button type="button">加入购物车</button></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="deal-banner" id="deals">
+        <div>
+          <p class="eyebrow">Weekly deals</p>
+          <h2>本周会员专享优惠</h2>
+          <p>领取新人券包，叠加满减与免邮权益，热门商品低至 7 折。</p>
+        </div>
+        <a class="button button--primary" href="#products">领取优惠券</a>
+      </section>
+
+      <section class="section service" id="service">
+        <div class="section__header">
+          <div>
+            <p class="eyebrow">Service flow</p>
+            <h2>轻松完成购物</h2>
+          </div>
+        </div>
+        <ol class="steps">
+          <li><span>1</span><strong>智能搜索</strong><p>快速定位商品、品牌与优惠活动。</p></li>
+          <li><span>2</span><strong>对比筛选</strong><p>按价格、评分、销量与物流筛选。</p></li>
+          <li><span>3</span><strong>安全支付</strong><p>支持多种支付方式，订单状态实时可见。</p></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <strong>A-Ctrl Max Shop</strong>
+      <p>让购物体验更清晰、更高效、更值得信赖。</p>
+    </footer>
+  </body>
+</html>

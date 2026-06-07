@@ -1,0 +1,10 @@
+{
+  "name": "a-ctrl-max-shop",
+  "version": "1.0.0",
+  "description": "A polished responsive shopping platform storefront.",
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 4173",
+    "check": "node scripts/validate-html.mjs"
+  }
+}
